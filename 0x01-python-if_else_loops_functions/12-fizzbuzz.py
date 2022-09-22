@@ -8,4 +8,3 @@ for i in range(1, 101):
         print("FizzBuzz", end=" ")
     else:
         print(i, end=" ")
-        print()
