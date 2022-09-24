@@ -2,11 +2,10 @@
 if __name__ == "__main__":
     import sys
 
-
     count = len(sys.argv) - 1
-    if count = 0:
+    if count == 0:
         print("0 argument")
     else:
         print("{:d} argument:".format(count))
-       for i in range(count):
-           print("{}: {}".format(i + 1. sys.arg[i + 1]))
+    for i in range(count):
+           print("{}: {}".format(i + 1, sys.arg[i + 1]))
