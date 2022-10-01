@@ -2,7 +2,4 @@
 def square_matrix_simple(matrix=[]):
     if not matrix:
         print()
-    else:
-        for row in matrix:
-            for x in row:
-                return (x ** 2)
+    return [[item ** 2 for item in row] for row in matrix]
