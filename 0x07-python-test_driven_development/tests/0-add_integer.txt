@@ -1,0 +1,53 @@
+TEST FILE FOR 0-add_integer.txt
+==============================
+This library is very simple since it contains only one function called ''add_integer()''.
+
+''add_integer()'' returns the sum of its arguments.
+That value is equivalent to using the '' + '' operator.
+..
+..
+        using ''add_integer()'' function
+        --------------------------
+        >>> add_integer = __import__('0-add_integer').add_integer
+
+        module documentation
+        ---------------------
+        >>> mod_doc = __import__('0-add_integer').__doc__
+        >>> len(mod_doc) > 1
+        True
+
+        function documentation
+        ----------------------
+        >>> fun_doc = __import__('0-add_integer').add_integer.__doc__
+        >>> len(fun_doc) > 1
+        True
+
+        Test 1:
+        >>> add_integer(2, 3)
+        5
+
+        Test 2:
+        >>> add_integer(2, -3)
+        -1
+
+        Test 3:
+        >>> add_integer(2)
+        100
+
+        Test 4:
+        >>> add_integer()
+        Traceback (most recent call last):
+                ---
+        TypeError: add_integer() missing 1 required positional argument: 'a'
+
+        Test 5
+        >>> add_integer("a")
+        Traceback (most recent call last):
+                ---
+        TypeError: a must be an integer
+
+        Test 6
+        >>> add_integer(4, 'a')
+	Traceback (most recent call last):
+		---
+	TypeError: a must be an integer
