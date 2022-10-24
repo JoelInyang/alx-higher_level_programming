@@ -1,0 +1,27 @@
+TEST FILE FOR 3-say_my_name.py
+=============================
+
+	"""
+	say_my_name prints out the name of the user in as much as it follows the required procedure		"""
+import module
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+import module doc
+	>>> mod_doc == __import__('3-say_my_name').__doc__
+	>>> len(mod_doc) > 1
+	True
+
+import function doc
+	>>> func_doc = __import__('3-say_my_name').say_my_name.__doc__
+	>>> len(func_doc)
+	True
+
+	Test 1
+	>>> say_my_name('Joel', 'Inyang')
+	My name is Joel Inyang
+
+	Test 2
+	>>> say_my_name()
+	Traceback(most recent call last)
+		...
+	TypeError: say_my_name() missing 1 reuired positional argument: 'first_name'
