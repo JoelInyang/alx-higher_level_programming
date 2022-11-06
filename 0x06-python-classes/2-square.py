@@ -17,3 +17,9 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.size = size
+
+    def area(self):
+        """
+        It returns the rea of the square which is an instance method
+        """
+        return self.__size ** 2
