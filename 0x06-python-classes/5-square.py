@@ -42,9 +42,9 @@ class Square:
         It prints # in form of a square therby returning a square
         """
         if self.__size == 0:
-            print(" ")
+            print()
         else:
-            for i in range(self.__size):
-                for j in range(self.__size):
+            for i in range(self.size):
+                for j in range(self.size):
                     print("#", end="")
                 print()
