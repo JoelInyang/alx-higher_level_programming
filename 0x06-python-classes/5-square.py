@@ -10,14 +10,14 @@ class Square:
     """
     The __init__ is the constructor function that initializes size
     """
-        self.size = size
+        self.__size = size
 
     @property
     def size(self):
     """
     It returns the size of the square
     """
-        return self._size
+        return self.__size
 
     @size.setter
     def size(self, value):
@@ -29,13 +29,13 @@ class Square:
         elif size < 0:
             raise ValueError("size must be >= 0")
         else:
-            self._size = size
+            self.__size = size
 
     def area(self):
     """
     It returns the area of the square by raising size to the power of 2
     """
-        return self._size ** 2
+        return self.__size ** 2
 
     def my_print(self):
         """
@@ -44,7 +44,7 @@ class Square:
         if size == 0:
             print(" ")
         else:
-            for i in range(self.size):
-                for j in range(self.size):
+            for i in range(self.__size):
+                for j in range(self.__size):
                     print("#", end=" ")
                 print()
