@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """
-It defines a square with attribute of size and position respectively 
+It defines a square with attribute of size and position respectively
 also get the area of the square and print #
 """
+
 
 class Square:
     """
@@ -10,7 +11,8 @@ class Square:
     """
     def __init__(self, size=0, position=(0, 0)):
         """
-        The __init__ is the constructor function having size and position as parameters
+        The __init__ is the constructor function
+        having size and position as parameters
         """
         self.__size = size
         self.__position = position
@@ -18,7 +20,8 @@ class Square:
     @property
     def size(self):
         """
-        It defines the size of the square and returns the size with the getter attribute
+        It defines the size of the square and
+        returns the size with the getter attribute
         """
         return self._size
 
@@ -31,12 +34,15 @@ class Square:
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
+
     @property
     def position(self):
         """
-        It defines the position of the square and returns the size with the getter attribute
+        It defines the position of the square and
+        returns the size with the getter attribute
         """
         return self.__position
+
     @position.setter
     def position(self, value):
         """
@@ -58,7 +64,7 @@ class Square:
         prints # in the form of a square
         """
         if size == 0:
-            print( )
+            print()
         else:
             for i in range(self.__size):
                 for j in range(self.__size):
