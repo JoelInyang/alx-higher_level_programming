@@ -14,8 +14,8 @@ class Square:
         The __init__ is the constructor function
         having size and position as parameters
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -23,7 +23,7 @@ class Square:
         It defines the size of the square and
         returns the size with the getter attribute
         """
-        return self._size
+        return self.__size
 
     @size.setter
     def size(self, value):
@@ -32,13 +32,15 @@ class Square:
         """
         if type(value) is not int:
             raise TypeError("size must be an integer")
-        elif size < 0:
+        elif value < 0:
             raise ValueError("size must be >= 0")
+        else:
+            self.__size = value
 
     @property
     def position(self):
         """
-        It defines the position of the square and
+        It defines the position of the square an9d
         returns the size with the getter attribute
         """
         return self.__position
@@ -51,7 +53,7 @@ class Square:
         if type(value) is not tuple:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
-            self.__position = position
+            self.__position = value
 
     def area(self):
         """
@@ -67,6 +69,6 @@ class Square:
             print()
         else:
             for i in range(self.__size):
-                for j in range(self.__size):
+                for j in range(self.__position):
                     print("#", end=" ")
                 print()
