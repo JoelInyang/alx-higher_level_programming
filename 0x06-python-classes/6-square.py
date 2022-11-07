@@ -8,7 +8,7 @@ class Square:
     """
     A square with all it properties
     """
-    def __init__(self, size=0, position=(0, 0):
+    def __init__(self, size=0, position=(0, 0)):
         """
         The __init__ is the constructor function having size and position as parameters
         """
@@ -28,7 +28,7 @@ class Square:
         It defines the size with the setter atttribute
         """
         if type(value) is not int:
-        raise TypeError("size must be an integer")
+            raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
     @property
