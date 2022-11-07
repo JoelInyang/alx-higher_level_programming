@@ -12,8 +12,8 @@ class Square:
         """
         The __init__ is the constructor function having size and position as parameters
         """
-        self.size = size
-        self.postion = postion
+        self.__size = size
+        self.__position = position
 
     @property
     def size(self):
@@ -45,7 +45,7 @@ class Square:
         if type(value) is not tuple:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
-            self.__position = postion
+            self.__position = position
 
     def area(self):
         """
