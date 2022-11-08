@@ -1,0 +1,31 @@
+TEST FILE FOR 4-print_square.py
+===============================
+	"""
+	4-print_square.py prints a square using # character
+	"""
+
+import module
+	>>> print_square = __import__('4-print_square').4-print_square
+
+import module doc
+	>>> mod_doc = __import__('4-print_square').__doc__
+	>>> len(mod_doc) > 1
+	True
+
+import function doc
+	>>> func_doc = __import__('4-print_square').print_square.__doc__
+	>>> len(func_doc) > 1
+	True
+
+	Test 1
+	>>> print_square(4)
+	####
+	####
+	####
+	####
+
+	Test 2
+	>>> print_square()
+	Traceback (most recent call last)
+		...
+	TypeError: print_square() missing 1 required postional argument: 'size'
