@@ -1,10 +1,18 @@
 #!/usr/bin/python3
-"""defines function to scalar divde matrix"""
+"""
+Defines function to scalar divde matrix 
+returning newmatrix
+"""
 
 
 def matrix_divided(matrix, div):
-    """divides matrix by scalar integer, rounded to two decimal places"""
+    """
+    divides matrix by scalar integer
+    rounded to two decimal places
+    """
+
     import decimal
+
     error_msg = "matrix must be a matrix (list of lists) of integers/floats"
     if type(matrix) is not list:
         raise TypeError(error_msg)
