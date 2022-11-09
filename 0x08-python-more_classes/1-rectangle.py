@@ -8,6 +8,10 @@ class Rectangle:
     Class of Rectangle with private attributes
     """
     def __init__(self, width=0, height=0):
+        """
+        This function initializes the
+        parameter for the whole class
+        """
         self.width = width
         self.height = height
 

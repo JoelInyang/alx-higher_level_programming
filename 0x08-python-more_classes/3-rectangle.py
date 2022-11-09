@@ -9,6 +9,10 @@ class Rectangle:
     Class of Rectangle with private attributes
     """
     def __init__(self, width=0, height=0):
+        """
+        The __init__ function is the constructor function
+        that initializes the parameter of the class
+        """
         self.width = width
         self.height = height
 
