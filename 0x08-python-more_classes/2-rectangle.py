@@ -10,7 +10,7 @@ class Rectangle:
     """
     def __init__(self, width=0, height=0):
         """
-        This function initializes 
+        This function initializes
         parameters for the whole class
         """
         self.width = width
