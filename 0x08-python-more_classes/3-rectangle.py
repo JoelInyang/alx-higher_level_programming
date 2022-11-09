@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 Class of Rectangle with private attribute of width and height respectively
+author: Joel Inyang
 """
 
 
@@ -78,6 +79,7 @@ class Rectangle:
         temp = ""
         if self.__width == 0 or self.__height == 0:
             return temp
+
         for i in range(self.__height):
             for j in range(self.__width):
                 temp += '#'
