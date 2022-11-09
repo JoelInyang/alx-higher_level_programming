@@ -69,7 +69,7 @@ class Rectangle:
 
     def __str__(self):
         """
-        It # prints along with print()
+        It # prints along with print() and returns the string
         """
         temp = ""
         if self.__width == 0 or self.__height == 0:
@@ -79,4 +79,4 @@ class Rectangle:
                 temp += '#'
                 if i < self.__height - 1:
                     temp += '\n'
-            return temp
+        return temp
