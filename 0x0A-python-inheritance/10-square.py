@@ -11,7 +11,7 @@ class Square(Rectangle):
     A class that inherit from BaseGeometry
     """
 
-    def __init__(self, width, height):
+    def __init__(self, size):
         """
         The constructor function
         """
