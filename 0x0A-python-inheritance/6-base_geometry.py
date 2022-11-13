@@ -1,13 +1,17 @@
 #!usr/bin/python3
 """
 A class BG that raises exception
+author: Joel Inyang
 """
 
 
-class BaseGeometry:
+class BaseGeometry():
     """
     It a BG class
     """
+    pass
+
+
     def area(self):
         """
         A method for calculating thw function,
