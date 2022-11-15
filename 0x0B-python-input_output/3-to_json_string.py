@@ -7,6 +7,7 @@ representation of an object (string)
 
 import json
 
+
 def to_json_string(my_obj):
     """
     that returns the JSON
