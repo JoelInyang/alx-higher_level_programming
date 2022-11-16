@@ -7,6 +7,7 @@ A filethat creates an Object from  JSON file
 
 import json
 
+
 def load_from_json_file(filename):
     """
     a function that creates an Object from a “JSON file”
